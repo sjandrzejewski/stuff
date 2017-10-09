@@ -133,5 +133,6 @@ set wildmode=longest,list
 set wildmenu
 set laststatus=2
 
+" tex related
 au FileType tex setlocal spell spelllang=pl
 au FileType tex set tw=79
