@@ -1,0 +1,11 @@
+export PATH=/Users/Slawek/Skrypty:$PATH
+export PATH=/usr/local/oracle/instantclient_10_2/:$PATH
+export HISTCONTROL=erasedups
+export CLICOLOR=1
+export LSCOLORS=AxFxCxDxBxegedabagacad
+#export TERM="xterm-color"
+#alias ls="ls -G"
+#PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
+#export PS1="[\[\e[33m\]\u@\H \[\e[32m\]\w\[\e[0m\]]\n[\[\e[31m\]\!\[\e[0m\]] > "
+PS1="\[\e[0;31m\]'\W' \u \$ \[\e[m\]"
+#alias mysb='ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/''
