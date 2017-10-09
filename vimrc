@@ -81,5 +81,57 @@ filetype indent on
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
 
-setlocal spell spelllang=pl
-set tw=79
+
+syntax on
+filetype plugin indent on
+
+" behaviour  
+set cursorline!
+nnoremap <Leader>c :set cursorline!<CR>
+nnoremap <F8> :tabnew<CR>
+set autowrite
+
+" vimgrep 
+nnoremap [q :cprev<CR>
+nnoremap ]q :cnext<CR>
+nnoremap [Q :cfirst<CR>
+nnoremap ]Q :clast<CR>
+nnoremap <Leader>g :copen<CR>
+
+" spellcheck
+set spelllang=en
+
+" apperience
+syntax on
+set number
+set foldcolumn=2
+set foldlevel=99
+set spell
+set nohlsearch
+set nowrap
+set history=100
+set ruler
+set rulerformat=%22(%M%n\ %=%l,%c%V\ %P%)
+set showcmd
+set showmatch
+set incsearch
+set ignorecase
+set display+=lastline 
+
+set tw=0
+set ts=4
+set sw=4
+set sts=4
+set shiftwidth=4
+set scrolloff=4
+
+set autoindent
+set smartindent
+set expandtab
+set smarttab
+set wildmode=longest,list
+set wildmenu
+set laststatus=2
+
+au FileType tex setlocal spell spelllang=pl
+au FileType tex set tw=79
